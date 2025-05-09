@@ -1,0 +1,2 @@
+ExpenseKernelVerificationAddress=0xE886B1803F38be050288F193132D41749731D2ce
+ProjectTrackerAddress=0xEC415F6a58a5Ef8ecC4EBf929bb4344e95DFf
