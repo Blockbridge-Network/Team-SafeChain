@@ -1,39 +1,40 @@
 # Team-SafeChain
 
 ## Overview
-Brief summary of what the DApp does and who it’s for. Especially the problem it solving
+The SafeChain DApp is a decentralized application designed to manage and track government-funded projects on a blockchain network, ensuring transparency, accountability, and immutability in project execution. It allows authorized users (government officials, auditors, and administrators) to:
 
 ## Features
-- ✅ Smart contract lending
-- ✅ Credit scoring with SBT
-- ✅ Token-gated content access
+- ✅ Immutable project, milestone, and expense records
+- ✅ Decentralized role-based access control
+- ✅ Transparent project tracking with public view functions
+  
 
 ## Project Structure
 - `contracts/`: Smart contracts (written in Solidity via Remix)
-- `frontend/`: DApp code (React, Next.js, or React Native)
+- `safechain/`: DApp code (Next.js)
 - `assets/`: Screenshots, mockups, etc.
 - `videos/`: Demo screen recordings
 - `deployment/`: Script files and deployed addresses
 
 ## Tech Stack
-- Solidity + Hardhat (or Remix)
-- React / Next.js / React Native
-- IPFS / Filecoin (optional)
-- MetaMask / WalletConnect
-- Ethers.js / Wagmi / RainbowKit
+- Solidity +  Remix
+- React / Next.js
+- MetaMask
+- Ethers.js
 
 ## How to Run Locally
 1. Clone the repo  
-2. `cd frontend && npm install`  
+2. `cd safechain && npm install`  
 3. `npm run dev`
 
 ## Contracts
 | Contract | Address | Network |
 |----------|---------|---------|
-| ExampleLoan.sol | 0x... | Sonic Testnet |
+| ExpenseKernelVerification.sol | 0xE886B1803F38be050288F193132D41749731D2ce| Sonic Testnet |
+| ProjectTracker.sol | 0xEC415F6a58a5Ef8ecC4EBf929bb4344e95DFf234 | Sonic Testnet |
 
 ## 📸 Screenshots
-![Screenshot 1](./images/screenshot-1.png)
+![Screenshot 1](./images/)
 
 ## 🎥 Demo Video
 [Watch here](./videos/demo.mp4)
