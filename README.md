@@ -40,8 +40,8 @@ The SafeChain DApp is a decentralized application designed to manage and track g
 [Watch here](videos/)
 
 ## Authors
-- Jane Doe (Frontend)
-- John Smith (Solidity)
+- Mahfuz Agbor Seidu (Frontend)
+- Mahfuz Agbor Seidu (Solidity)
 
 ## 📄 License
 MIT or GPL-3.0
