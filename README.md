@@ -13,6 +13,7 @@ The SafeChain DApp is a decentralized application designed to manage and track g
 - `contracts/`: Smart contracts (written in Solidity via Remix)
 - `safechain/`: DApp code (Next.js)
 - `assets/`: Screenshots, mockups, etc.
+- `docs/`: About the project and how to use the smart contract
 - `videos/`: Demo screen recordings
 - `deployment/`: Script files and deployed addresses
 
