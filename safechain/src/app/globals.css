@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f1729;
+  --foreground: #ffffff;
+  --accent-1: #3b82f6;
+  --accent-2: #8b5cf6;
+  --accent-glow: rgba(139, 92, 246, 0.3);
+  --card-bg: rgba(17, 25, 40, 0.75);
+  --border-glow: rgba(59, 130, 246, 0.5);
+}
+
+@layer base {
+  body {
+    @apply bg-[#0f1729] text-white;
+    background-image: 
+      radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 0% 0%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl;
+    background: var(--card-bg);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+  
+  .glass-card-hover:hover {
+    @apply border-blue-500/30;
+    box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .glow-effect {
+    @apply relative overflow-hidden;
+  }
+  
+  .glow-effect::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-xl opacity-0 transition-opacity duration-500;
+  }
+  
+  .glow-effect:hover::before {
+    @apply opacity-100;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .dashboard-stat {
+    @apply glass-card-hover p-6 relative overflow-hidden;
+  }
+
+  .dashboard-stat::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-transparent to-blue-500/5 opacity-0 transition-opacity duration-300;
+  }
+
+  .dashboard-stat:hover::after {
+    @apply opacity-100;
+  }
+
+  .web3-button {
+    @apply px-4 py-2 rounded-xl font-medium transition-all duration-300 relative overflow-hidden;
+    background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
+  }
+
+  .web3-button:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .progress-bar {
+    @apply h-2 rounded-full bg-gray-700/50 overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full rounded-full transition-all duration-500;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400;
+}
+
+.hover-scale {
+  @apply transform transition-transform duration-300 hover:scale-105;
+}
+
+.hexagon-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' stroke-width='2' stroke='rgba(59, 130, 246, 0.1)' fill='none'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
