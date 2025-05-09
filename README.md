@@ -34,7 +34,7 @@ The SafeChain DApp is a decentralized application designed to manage and track g
 | ProjectTracker.sol | 0xEC415F6a58a5Ef8ecC4EBf929bb4344e95DFf234 | Sonic Testnet |
 
 ## 📸 Screenshots
-![Screenshot 1](images/)
+(images/)
 
 ## 🎥 Demo Video
 [Watch here](videos/)
