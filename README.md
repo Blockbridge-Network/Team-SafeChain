@@ -38,7 +38,7 @@ The SafeChain DApp is a decentralized application designed to manage and track g
 .[view images](assets/)
 
 ## 🎥 Demo Video
-[Watch here](videos/)
+[Watch here](https://youtu.be/4f8jaaXIN60)
 
 ## Authors
 - Mahfuz Agbor Seidu (Frontend)
