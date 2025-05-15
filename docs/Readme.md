@@ -118,7 +118,7 @@ Tech Stack
 
 
 
-Smart Contracts: Solidity (^0.8.0), OpenZeppelin (AccessControl).
+Smart Contracts: Solidity, OpenZeppelin (AccessControl).
 
 
 
@@ -195,7 +195,7 @@ Compile:
 
 
 
-Select Solidity compiler ^0.8.0.
+Select Solidity compiler 
 
 
 
